@@ -1,7 +1,8 @@
-var DB   = require('db');
+var db   = require('db');
 var User = require('./user');
+var log  = require('logger')(module); // send reference to current module as argument for logger.js
 
-DB.connect();
+db.connect();
 
 /**
  * Public API of Module. Such approach allows
@@ -14,8 +15,8 @@ function run(){
     vasya.hello(petia);
 
     // Access to global variable from User module
-    console.log(Lang);
-    console.log(DB.getPhrase("Run successful"));
+    log(Lang);
+    log(db.getPhrase("Run successful"));
 }
 
 if (module.parent) {    // something require('server.js')

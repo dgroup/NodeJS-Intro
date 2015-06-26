@@ -9,3 +9,5 @@ Module types:
 1. JS (current)
 2. Node(C++)
 3. JSON
+
+Each module can be cached (by id) with its state and can be re-used.
