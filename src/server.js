@@ -1,6 +1,6 @@
-var db   = require('db');
-var User = require('./user');
-var log  = require('logger')(module); // send reference to current module as argument for logger.js
+var db   = require('db');				// add module/js file
+var User = require('./user');			// add module/js file
+var log  = require('logger')(module); 	// send reference to current module as argument for logger.js
 
 db.connect();
 
@@ -9,8 +9,8 @@ db.connect();
  * to use this module as module or as standalone app.
  **/
 function run(){
-    var vasya = new User("Вася");
-    var petia = new User("Петя");
+    var vasya = new User("Tom");
+    var petia = new User("Hank");
 
     vasya.hello(petia);
 

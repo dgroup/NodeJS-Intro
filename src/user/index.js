@@ -1,4 +1,8 @@
-var db  = require('db'); // if 'ru.js' not found, NodeJS will automatically found ru.json/ru.node/'ru' directory
+/*
+	if 'ru.js' not found, NodeJS will automatically 
+	found ru.json/ru.node/'ru' directory
+*/ 
+var db  = require('db'); 
 var log = require('logger')(module);
 
 function User(name){
@@ -11,10 +15,16 @@ User.prototype.hello = function (who) {
 
 log("Module \"User\" was activated.");
 
-// Public API of module
-module.exports  = User; // allows to use function without intermediate code var c = require('user');
+/*	
+	Public API of module 
+	allows to use function without intermediate code 
+	var c = require('user'); 
+*/
+module.exports  = User; 
+
 //exports.User    = User;
-//this.User       = User;    // this = exports, but there is a problem with functions
+//this.User       = User;    
+// this = exports, but there is a problem with functions
 
 // Public Global object of module
 global.Lang = "EN";

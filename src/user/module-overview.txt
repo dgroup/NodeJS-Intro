@@ -1,31 +1,41 @@
-
-{ id: 'g:\\Development\\NodeJS-screencast\\src\\user\\index.js',        - ID for NodeJS Core
-  exports: { User: [Function: User] },                                  - Public API
-  parent:                                                               - Reference to parent module (place where require('user') using)
-  { id: '.',
-    exports: {},
-    parent: null,
-    filename: 'g:\\Development\\NodeJS-screencast\\src\\server.js',
-    loaded: false,
-    children: [ [Circular] ],
-    paths:
-    [ 'g:\\Development\\NodeJS-screencast\\src\\node_modules',
-      'g:\\Development\\NodeJS-screencast\\node_modules',
-      'g:\\Development\\node_modules',
-      'g:\\node_modules' ] },
-  filename: 'g:\\Development\\NodeJS-screencast\\src\\user\\index.js',  - Full file name of module with symbolic links
-  loaded: false,                                                        - Is module loaded somewhere? false - not yet
-  children:                                                             - Modules, which are enabled by require('') function in current module
-  [ { id: 'g:\\Development\\NodeJS-screencast\\src\\user\\ru.json',
-      exports: [Object],
-      parent: [Circular],
-      filename: 'g:\\Development\\NodeJS-screencast\\src\\user\\ru.json',
-      loaded: true,
-      children: [],
-      paths: [Object] } ],
-  paths:                                                                - Internal parameters for modules search
-  [ 'g:\\Development\\NodeJS-screencast\\src\\user\\node_modules',
-    'g:\\Development\\NodeJS-screencast\\src\\node_modules',
-    'g:\\Development\\NodeJS-screencast\\node_modules',
-    'g:\\Development\\node_modules',
-    'g:\\node_modules' ] }
+Module {
+  id: 'D:\\petproject\\NodeJS-Intro\\src\\user\\index.js',
+  exports: [Function: User],
+  parent:
+   Module {
+     id: 'D:\\petproject\\NodeJS-Intro\\src\\server.js',
+     exports: {},
+     parent:
+      Module {
+        id: '.',
+        exports: {},
+        parent: null,
+        filename: 'D:\\petproject\\NodeJS-Intro\\src\\app.js',
+        loaded: false,
+        children: [Object],
+        paths: [Object] },
+     filename: 'D:\\petproject\\NodeJS-Intro\\src\\server.js',
+     loaded: false,
+     children: [ [Object], [Circular] ],
+     paths:
+      [ 'D:\\petproject\\NodeJS-Intro\\src\\node_modules',
+        'D:\\petproject\\NodeJS-Intro\\node_modules',
+        'D:\\petproject\\node_modules',
+        'D:\\node_modules' ] },
+  filename: 'D:\\petproject\\NodeJS-Intro\\src\\user\\index.js',
+  loaded: false,
+  children:
+   [ Module {
+       id: 'D:\\petproject\\NodeJS-Intro\\src\\node_modules\\logger.js',
+       exports: [Function],
+       parent: [Circular],
+       filename: 'D:\\petproject\\NodeJS-Intro\\src\\node_modules\\logger.js',
+       loaded: true,
+       children: [],
+       paths: [Object] } ],
+  paths:
+   [ 'D:\\petproject\\NodeJS-Intro\\src\\user\\node_modules',
+     'D:\\petproject\\NodeJS-Intro\\src\\node_modules',
+     'D:\\petproject\\NodeJS-Intro\\node_modules',
+     'D:\\petproject\\node_modules',
+     'D:\\node_modules' ] }
